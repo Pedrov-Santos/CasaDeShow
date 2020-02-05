@@ -12,8 +12,38 @@
 <link rel="stylesheet" type="text/css" href="/css/bootstrap-datepicker.standalone.min.css" />
 </head>
 
-<body id="body">
 
+<body id="body">
+<button type="button" class="btn btn-outline-primary" id="botaoLogin">Conecte-se</button>
+<button type="button" class="btn btn-outline-light" id="botaoLogin">Cadastrar-se</button>
+
+<ul class="nav justify-content-center">
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle btn btn-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Eventos</a>
+    <div class="dropdown-menu">
+      
+     <div class="dropdown-divider"></div>
+      <a class="dropdown-item btn btn-light"  href="/home" >Principais Eventos</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item btn btn-light" href="#todosEventos">Todos os Eventos</a>
+    </div>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle btn btn-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Novo Evento</a>
+    <div class="dropdown-menu">
+      
+     <div class="dropdown-divider"></div>
+      <a class="dropdown-item btn btn-light" href="/novoEvento">Cadastrar novo evento</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item btn btn-light" href="/novaCasa">Cadastrar nova casa de Show</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link btn btn-light " href="#">Historico</a>
+  </li>
+  
+</ul>
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -82,9 +112,19 @@
   <div class="slider__control slider__control--right m--right">
     <div class="slider__control-line"></div>
     <div class="slider__control-line"></div>
-  </div>
-
-	
+  </div>  
+  
+<div class="container content-area"> 
+<section id="todosEventos">
+<h2 class="section_title">Lista de Eventos</h2>
+<ul class="list-group">
+  <li class="list-group-item">First item</li>
+  <li class="list-group-item">Second item</li>
+  <li class="list-group-item">Third item</li>
+  <li class="list-group-item">Fourth item</li>
+</ul>
+</section>
+	</div>
 	
 	<script src="/js/jquery-3.4.1.min.js"></script>
 	<script th:src="@{/js/bootstrap.min.js}"></script>

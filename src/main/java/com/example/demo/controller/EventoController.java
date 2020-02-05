@@ -11,4 +11,13 @@ public class EventoController {
 		
 		return "Home";
 	}
+	
+	@RequestMapping("/novoEvento")
+	public String novoEvento() {
+		return "NovoEvento";
+	}
+	@RequestMapping("/novaCasa")
+	public String novaCasa() {
+		return "NovaCasa";
+	}
 }

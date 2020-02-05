@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+
+<head>
+<meta charset="UTF-8" />
+<title>Eventos</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/css/bootstrap-datepicker.standalone.min.css" />
+</head>
+
+
+<body id="body-novoEvento">
+<button type="button" class="btn btn-outline-primary" id="botaoLogin">Conecte-se</button>
+<button type="button" class="btn btn-outline-light" id="botaoLogin">Cadastrar-se</button>
+
+<ul class="nav justify-content-center">
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle btn btn-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Eventos</a>
+    <div class="dropdown-menu">
+      
+     <div class="dropdown-divider"></div>
+      <a class="dropdown-item btn btn-light"  href="/home" >Principais Eventos</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item btn btn-light" href="#">Todos os Eventos</a>
+    </div>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle btn btn-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Novo Evento</a>
+    <div class="dropdown-menu">
+      
+     <div class="dropdown-divider"></div>
+      <a class="dropdown-item btn btn-light" href="/novoEvento">Cadastrar novo evento</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item btn btn-light" href="/novaCasa">Cadastrar nova casa de Show</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link btn btn-light " href="#">Historico</a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+
+	<script src="/js/jquery-3.4.1.min.js"></script>
+	<script th:src="@{/js/bootstrap.min.js}"></script>
+	<script src="/js/bootstrap-datepicker.min.js"></script>
+	<script src="/js/bootstrap-datepicker.pt-BR.min.js"></script>
+	<script src="/js/jquery.maskMoney.min.js"></script>
+
+	<script src="/js/cobranca.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+
+</body>
+</html>
